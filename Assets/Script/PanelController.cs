@@ -14,6 +14,7 @@ public class PanelController : MonoBehaviour
     } 
     private void MoveObject(Vector2 movement) 
    { 
+    Debug.Log("TEST: " + movement); 
     rig.velocity = movement; 
     } 
   private Vector2 GetInput() 
