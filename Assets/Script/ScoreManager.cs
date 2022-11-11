@@ -33,7 +33,7 @@ public class ScoreManager : MonoBehaviour
 
     public void Gameover()
     {
-       SceneManager.LoadScene("Main Menu");
+       SceneManager.LoadScene("Menu");
     }
 
     void Start()

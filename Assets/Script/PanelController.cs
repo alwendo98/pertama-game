@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PanelController : MonoBehaviour
 { 
-    public Vector2 speed; 
+    public int speed; 
   public KeyCode upKey; 
     public KeyCode downKey; 
   private Rigidbody2D rig; 
