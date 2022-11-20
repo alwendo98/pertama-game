@@ -6,6 +6,7 @@ public class Ball : MonoBehaviour
 {
    public  Vector2 speed;
    public Vector2 resetPosition;
+   public GameObject goalEffect;
 
    private Rigidbody2D rig; 
     
@@ -17,11 +18,17 @@ public class Ball : MonoBehaviour
     public void ResetBall()
     {
       transform.position = new Vector3(resetPosition.x, resetPosition.y,2);
+      Instantiate(goalEffect, this.transform.position, Quaternion.identity);
+    
     }
    
    public void ActivateSpeedUp(float magnitude)
    {
     rig.velocity *= magnitude;
+    Instantiate(goalEffect, this.transform.position, Quaternion.identity);
+   
    }
+
+   
     
 }

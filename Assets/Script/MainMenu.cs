@@ -12,6 +12,10 @@ public class MainMenu : MonoBehaviour
     }
     public void OpenAuthor() 
     { 
-        Debug.Log("Created By Gue"); 
+        Debug.Log("Created By Michael Alwendo Sianturi"); 
     } 
+    public void CreditGame()
+    {
+        SceneManager.LoadScene("Credit");
+    }
 }
